@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Parameter Test - Spiderling</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .params-box {
+            padding: 25px;
+            background: #fdfdfd;
+            border: 2px dashed #0071e3;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+        .param-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .param-label {
+            font-weight: 600;
+            color: #555;
+        }
+        .param-value {
+            color: #0071e3;
+            font-weight: bold;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dynamic Parameter Loader</h1>
+            <p>This page extracts and displays values from URL query parameters (?id=...&name=...).</p>
+        </header>
+
+        <section class="section">
+            <h2>Current URL Data</h2>
+            <div class="params-box">
+                <div class="param-item">
+                    <span class="param-label">ID Parameter:</span>
+                    <span class="param-value" id="val-id">Not Provided</span>
+                </div>
+                <div class="param-item">
+                    <span class="param-label">Name Parameter:</span>
+                    <span class="param-value" id="val-name">Not Provided</span>
+                </div>
+                <div class="param-item">
+                    <span class="param-label">Last Refreshed:</span>
+                    <span class="param-value" id="val-time">-- : -- : --</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Quick Test Links</h2>
+            <p>Click these links to test parameter handling:</p>
+            <ul>
+                <li><a href="?id=1001&name=Spiderling">?id=1001&name=Spiderling</a></li>
+                <li><a href="?id=888&name=JohnDoe">?id=888&name=JohnDoe</a></li>
+                <li><a href="?id=99&name=TestUser">?id=99&name=TestUser</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <button onclick="location.reload()">Refresh Page</button>
+            <p style="text-align: center; color: #86868b; font-size: 14px; margin-top: 20px;">
+                Generated for URL Parameter Testing &copy; 2026
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 解析 URL 参数
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            const id = urlParams.get('id');
+            const name = urlParams.get('name');
+            
+            // 更新 UI
+            if (id) document.getElementById('val-id').textContent = id;
+            if (name) document.getElementById('val-name').textContent = name;
+            
+            // 获取当前时间
+            const now = new Date();
+            const timeStr = now.getHours().toString().padStart(2, '0') + ":" + 
+                            now.getMinutes().toString().padStart(2, '0') + ":" + 
+                            now.getSeconds().toString().padStart(2, '0');
+            
+            document.getElementById('val-time').textContent = timeStr;
+            
+            console.log('Parameters loaded:', { id, name, time: timeStr });
+        });
+    </script>
+</body>
+</html>

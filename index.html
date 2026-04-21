@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Test Controls - Spiderling</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Spiderling System Test Page</h1>
+            <p>This page contains various HTML controls to test scraping and automation features.</p>
+        </header>
+
+        <section class="section" id="form-section">
+            <h2>Inputs & Forms</h2>
+            <div class="form-group">
+                <label for="nameInput">Full Name</label>
+                <input type="text" id="nameInput" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="emailInput">Email Address</label>
+                <input type="email" id="emailInput" placeholder="example@domain.com">
+            </div>
+            <div class="form-group">
+                <label for="categorySelect">Category</label>
+                <select id="categorySelect">
+                    <option value="tech">Technology</option>
+                    <option value="business">Business</option>
+                    <option value="science">Science</option>
+                    <option value="art">Art</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="termsCheck"> I agree to the terms
+                </label>
+            </div>
+            <button id="submitBtn">Submit Data</button>
+        </section>
+
+        <section class="section" id="table-section">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2>Data Table</h2>
+                <button id="addRowBtn" style="background-color: #34c759;">Add Row</button>
+            </div>
+            <table id="testTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Status</th>
+                        <th>Last Updated</th>
+                        <th>Detail Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Core Processor</td>
+                        <td>In Stock</td>
+                        <td>2024-03-15</td>
+                        <td><a href="dynamic_params.html?id=1&name=Core Processor" style="color: #0071e3;">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Virtual RAM</td>
+                        <td>Out of Stock</td>
+                        <td>2024-03-20</td>
+                        <td><a href="dynamic_params.html?id=2&name=Virtual RAM" style="color: #0071e3;">View Details</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pagination-container" style="margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 15px;">
+                <button id="prevPageBtn" style="background-color: #86868b;">&laquo; Prev</button>
+                <button id="nextPageBtn" style="background-color: #86868b;">Next &raquo;</button>
+                <div class="page-input-wrapper" style="display: flex; align-items: center; gap: 5px;">
+                    <span>Page</span>
+                    <input type="number" id="pageNumberInput" value="1" min="1" max="10" style="width: 50px; text-align: center; padding: 5px; border: 1px solid #d1d1d6; border-radius: 4px;">
+                    <span>of 10</span>
+                </div>
+                <button id="jumpPageBtn" style="background-color: #0071e3;">Jump</button>
+            </div>
+        </section>
+
+        <section class="section" id="div-section">
+            <h2>Bento Grid (Div Styles)</h2>
+            <div class="flex-row">
+                <div class="card" id="card-1">
+                    <h3>Performance</h3>
+                    <p>99.9% uptime achieved in Q1.</p>
+                </div>
+                <div class="card" id="card-2" style="background: #0071e3; color: white; border: none;">
+                    <h3>Automation</h3>
+                    <p>Ready for scraping tests with Selenium.</p>
+                </div>
+                <div class="card" id="card-3">
+                    <h3>Analytics</h3>
+                    <p>Real-time data synchronization enabled.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p style="text-align: center; color: #86868b; font-size: 14px;">
+                Generated for Spiderling Testing &copy; 2026
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
