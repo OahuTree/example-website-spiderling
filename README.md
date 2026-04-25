@@ -18,7 +18,7 @@
 - プログラムの作成または変更を行うと、自動的に spiderling.netlify.app へアップロードされます。HTML、CSS、JavaScript などの静的プログラムをサポートしています。
 - 広告内容をアップロードする場合は、コミュニティに対して10,000ドル以上の寄付をお願いいたします。
 
-- 這是一個用於測試純靜態頁面的網站，訪問連結為 [netlify.app](https://spiderling.netlify.app)。
+- 這是一個用於測試純靜態頁面的網站，訪問連結為 https://spiderling.netlify.app。
 - 建立或者修改程式，將自動上傳到 spiderling.netlify.app。支持 HTML、CSS、JavaScript 等靜態程式。
 - 如果上傳廣告內容，請對社區進行不少於 10,000 美元的捐款。
 
