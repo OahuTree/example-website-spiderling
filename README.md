@@ -25,14 +25,3 @@
 ### 
 - 這是一個用於測試純靜態頁面的網站，訪問連結為 https://spiderling.netlify.app 。
 - 建立或者修改程式，將自動上傳到 spiderling.netlify.app。支持 HTML、CSS、JavaScript 等靜態程式。
-
-
-## 🚫 禁止行为 （Prohibited Actions）（禁止事項）（禁止行為）
-- 请自觉遵守社区规则及相关法律，禁止上传不限于包括暴力、色情、歧视、胁迫、威胁、宗教、政治、欺诈等方面的相关内容。
-### 
-- Please strictly abide by community rules and relevant laws. Uploading content including, but not limited to, violence, pornography, discrimination, coercion, threats, religion, politics, or fraud is strictly prohibited.
-  ### 
-- コミュニティ規定および関連法規を遵守してください。暴力、ポルノ、差別、強要、脅迫、宗教、政治、詐欺などを含む（ただしこれらに限定されない）不適切なコンテンツのアップロードは固く禁止します。
-  ### 
-- 請自覺遵守社區規則及相關法律，禁止上傳包括但不限於暴力、色情、歧視、脅迫、威脅、宗教、政治、欺詐等方面之相關內容。
-
